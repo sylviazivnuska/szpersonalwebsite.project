@@ -34,7 +34,7 @@
 }
 
 /* ===== Header Banner ===== */
-/* .header-banner {
+.header-banner {
     width: 100%;
     background: linear-gradient(90deg, #1f3c88, #2a5298);
     padding: 20px 40px;
@@ -45,118 +45,43 @@
 } */
 
 /* ===== Navigation Container ===== */
-/* .nav-container {
+.nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-} */
+}
 
 /* ===== Logo Styling ===== */
-/* .logo {
+.logo {
     color: white;
     font-size: 24px;
     font-weight: bold;
     letter-spacing: 1px; */
-/* } */
+/* /* } */
 
 /* ===== Navigation Links ===== */
-/* .nav-links {
+.nav-links {
     list-style: none;
     display: flex;
     gap: 30px;
     margin: 0;
     padding: 0;
-} */
+}
 
-/* .nav-links li a {
+.nav-links li a {
     text-decoration: none;
     color: white;
     font-size: 16px;
     font-weight: 500;
     transition: color 0.3s ease, transform 0.2s ease;
-} */
+}
 
 /* Hover Effects */
-/* .nav-links li a:hover {
+.nav-links li a:hover {
     color: #ffd700;
     transform: translateY(-2px);
-} */
+}
 
-/* ===== Smooth Scroll Behavior ===== */
-/* html {
+html {
     scroll-behavior: smooth;
-} */
-
-/* The container where menu.js injects the menu */
-.menu-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 9999;
-  box-sizing: border-box;
-  padding: 22px 60px;
-}
-
-/* Force the menu to be a single row */
-.menu-container * {
-  box-sizing: border-box;
-}
-
-/* Common patterns in these templates: menu/table/row wrappers.
-   We set them to flex so left + right align works. */
-.menu-container .menu,
-.menu-container .menu-table,
-.menu-container .menu-row,
-.menu-container .menu-content {
-  display: flex !important;
-  align-items: center !important;
-  width: 100%;
-}
-
-/* Put the "name/logo" on the left if there is one */
-.menu-container .menu-logo,
-.menu-container .menu-title,
-.menu-container .menu-name {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #000;
-}
-
-/* The links group */
-.menu-container .menu-items,
-.menu-container ul,
-.menu-container .menu-list {
-  list-style: none !important;
-  display: flex !important;
-  flex-direction: row !important;
-  gap: 36px;
-  margin: 0 0 0 auto !important; /* pushes links to the right */
-  padding: 0 !important;
-}
-
-/* Individual links (including your menu-index) */
-.menu-container a {
-  font-family: 'Source Sans Pro', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 600;
-  font-size: 13px;
-
-  color: #000 !important;
-  text-decoration: none !important;
-  opacity: 0.9;
-}
-
-.menu-container a:hover {
-  opacity: 0.6;
-}
-
-/* Your highlighted/current page link */
-.menu-container a.menu-index {
-  opacity: 1 !important;
-  font-weight: 700 !important;
 }
