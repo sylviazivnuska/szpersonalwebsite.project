@@ -32,3 +32,118 @@
   display: none;
   color: #007bff;
 }
+
+/* ===== Header Banner ===== */
+/* .header-banner {
+    width: 100%;
+    background: linear-gradient(90deg, #1f3c88, #2a5298);
+    padding: 20px 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+} */
+
+/* ===== Navigation Container ===== */
+/* .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+/* ===== Logo Styling ===== */
+/* .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px; */
+/* } */
+
+/* ===== Navigation Links ===== */
+/* .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+} */
+
+/* .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.2s ease;
+} */
+
+/* Hover Effects */
+/* .nav-links li a:hover {
+    color: #ffd700;
+    transform: translateY(-2px);
+} */
+
+/* ===== Smooth Scroll Behavior ===== */
+/* html {
+    scroll-behavior: smooth;
+} */
+
+/* ===== Clean Top Navigation Bar (Top-left name + top-right links) ===== */
+.header-banner {
+  width: 100%;
+  background: transparent;     /* looks like the example */
+  padding: 25px 60px;
+
+  position: absolute;          /* sits on top of your banner image */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Navigation Layout */
+.nav-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Logo / Name (Top Left) */
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: black;                /* change to white if your banner is dark */
+  text-transform: uppercase;
+}
+
+/* Nav Links (Top Right) */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+
+  margin: 0;
+  padding: 0;
+
+  margin-left: auto;           /* THIS pushes links to the right */
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  color: black;                /* change to white if needed */
+  text-transform: uppercase;
+
+  transition: opacity 0.25s ease;
+}
+
+.nav-links li a:hover {
+  opacity: 0.6;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
