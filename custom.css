@@ -87,63 +87,76 @@
     scroll-behavior: smooth;
 } */
 
-/* ===== Clean Top Navigation Bar (Top-left name + top-right links) ===== */
-.header-banner {
-  width: 100%;
-  background: transparent;     /* looks like the example */
-  padding: 25px 60px;
-
-  position: absolute;          /* sits on top of your banner image */
+/* The container where menu.js injects the menu */
+.menu-container {
+  position: absolute;
   top: 0;
   left: 0;
-  z-index: 1000;
+  width: 100%;
+  z-index: 9999;
+  box-sizing: border-box;
+  padding: 22px 60px;
 }
 
-/* Navigation Layout */
-.nav-container {
-  display: flex;
-  align-items: center;
+/* Force the menu to be a single row */
+.menu-container * {
+  box-sizing: border-box;
 }
 
-/* Logo / Name (Top Left) */
-.logo {
-  font-size: 22px;
+/* Common patterns in these templates: menu/table/row wrappers.
+   We set them to flex so left + right align works. */
+.menu-container .menu,
+.menu-container .menu-table,
+.menu-container .menu-row,
+.menu-container .menu-content {
+  display: flex !important;
+  align-items: center !important;
+  width: 100%;
+}
+
+/* Put the "name/logo" on the left if there is one */
+.menu-container .menu-logo,
+.menu-container .menu-title,
+.menu-container .menu-name {
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
-  color: black;                /* change to white if your banner is dark */
   text-transform: uppercase;
-}
-
-/* Nav Links (Top Right) */
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 40px;
-
-  margin: 0;
-  padding: 0;
-
-  margin-left: auto;           /* THIS pushes links to the right */
-}
-
-.nav-links li a {
   text-decoration: none;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 1px;
-
-  color: black;                /* change to white if needed */
-  text-transform: uppercase;
-
-  transition: opacity 0.25s ease;
+  color: #000;
 }
 
-.nav-links li a:hover {
+/* The links group */
+.menu-container .menu-items,
+.menu-container ul,
+.menu-container .menu-list {
+  list-style: none !important;
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 36px;
+  margin: 0 0 0 auto !important; /* pushes links to the right */
+  padding: 0 !important;
+}
+
+/* Individual links (including your menu-index) */
+.menu-container a {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 13px;
+
+  color: #000 !important;
+  text-decoration: none !important;
+  opacity: 0.9;
+}
+
+.menu-container a:hover {
   opacity: 0.6;
 }
 
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
+/* Your highlighted/current page link */
+.menu-container a.menu-index {
+  opacity: 1 !important;
+  font-weight: 700 !important;
 }
-
